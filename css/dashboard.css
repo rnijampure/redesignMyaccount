@@ -1,0 +1,712 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+  padding: 6px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+         
+}
+.nav-sidebar > li > a.border-bottom{
+     border-bottom: 1px solid #007db8;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color:#007db8;
+}
+.nav-sidebar .nav > li {
+        border-bottom: 1px solid #007db8;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*New Styles*/
+
+.masthead {
+    margin-bottom: 20px;
+    color: #fff
+}
+
+.masthead .navbar {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    z-index: 4050
+}
+
+.masthead .navbar-inverse,
+.masthead .navbar-toggle {
+    border-color: transparent
+}
+
+#masthead .navbar-inverse {
+    background-color: #007db8
+}
+
+.masthead .navbar-brand {
+    padding: 0;
+    margin-top: 13px
+}
+
+.masthead .navbar-brand a:hover {
+    text-decoration: none
+}
+
+header .utility-section-wrapper {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 -1px
+}
+
+.masthead .form-control {
+    display: inline;
+    border-radius: 0
+}
+
+.masthead .svg-icon-dell {
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 40px;
+    color: #fff
+}
+
+.masthead .form-search {
+    margin-top: 18px;
+    float: left;
+    position: relative
+}
+
+.masthead .form-search .search-query {
+    height: 30px
+}
+
+.masthead .form-search .btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 2px 12px;
+    border-radius: 0
+}
+
+.masthead .form-search .btn:hover,
+.masthead .form-search .btn:focus,
+.masthead .form-search .btn:active,
+.masthead .form-search .btn:visited {
+    color: #007db8
+}
+
+.masthead ul.utility {
+    margin: 0;
+    padding-left: 0;
+    width: 185px;
+    display: inline-block;
+    float: right
+}
+
+.masthead li {
+    list-style-type: none
+}
+
+.masthead li.dropdown {
+    display: inline-block;
+    float: left;
+    position: relative
+}
+
+.masthead li.dropdown .dropdown-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: auto;
+    left: 0;
+    width: 100%;
+    color: #444;
+    border-radius: 0;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #cce7f3;
+    border-bottom: 4px solid #007db8;
+    border-left: 1px solid #cce7f3;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff
+}
+
+.masthead li.dropdown .dropdown-menu .row {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.masthead li.dropdown .dropdown-menu h5 {
+    margin: 10px 0;
+    padding: 0;
+    color: #007db8
+}
+
+.masthead li.dropdown .dropdown-menu h5.flyout-signin {
+    font-size: 14px
+}
+
+.masthead li.dropdown .dropdown-menu h5 a {
+    padding: 0
+}
+
+.masthead li.dropdown .dropdown-menu hr {
+    margin: 10px 0;
+    border-top: 1px solid #ccc
+}
+
+.masthead li.dropdown .flyout-cart-content .list-inline {
+    padding-left: 15px
+}
+
+.masthead li.dropdown .flyout-cart-content a:hover {
+    color: #00447c;
+    cursor: pointer
+}
+
+.masthead li.dropdown .dropdown-menu .flyout-btn {
+    padding: 0
+}
+
+.masthead li.dropdown .dropdown-menu .flyout-cart-links {
+    text-decoration: none;
+    background-color: #fff;
+    background: 0;
+    border: 0
+}
+
+.masthead li.dropdown .saved-carts a,
+.masthead li.dropdown .saved-carts li {
+    margin: 0;
+    padding: 0
+}
+
+.masthead li.dropdown .flyout-cart-content .list-inline li {
+    padding: 0
+}
+
+.sign-in-bullets ul {
+    margin-left: 30px;
+    padding-left: 0;
+    list-style-type: disc
+}
+
+.sign-in-bullets ul li {
+    list-style-type: disc
+}
+
+.masthead .utility li.open {
+    background: #fff
+}
+
+.masthead .utility li.open i,
+.masthead .utility li.open a {
+    color: #007db8
+}
+
+.masthead .utility a,
+.masthead .utility a:link,
+.masthead .utility a:visited {
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #fff;
+    display: block
+}
+
+.masthead .utility a:hover {
+    text-decoration: none
+}
+
+.masthead .navbar-toggle:hover {
+    background-color: transparent
+}
+
+.masthead .utility [class^=icon] {
+    font-size: 18px
+}
+
+.masthead .utility .badge [class^=icon] {
+    font-size: 6px;
+    color: #fff
+}
+
+.masthead .utility .icon-ui-menucollapsed {
+    font-size: 16px
+}
+
+.masthead .utility .badge {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 4px 4px 4px 3px;
+    font-size: 6px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 0;
+    white-space: nowrap;
+    text-align: left;
+    background-color: #6ea204;
+    border-radius: 10px
+}
+
+.masthead .utility li.dropdown.cart .badge {
+    position: absolute;
+    top: 12px;
+    left: 27px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    min-width: 15px;
+    padding: 3px 2px 0 1px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: #444;
+    border-radius: 14px
+}
+
+.masthead #signin-link {
+    position: relative;
+    cursor: pointer
+}
+.girl_smiling{
+  width: 50px;
+  height: auto;
+}
+.profile_div{
+  margin: 20px 0px;
+  padding-left: 10px;
+}
+.nav-second-level li a{
+  padding-left: 15%;
+
+}
+.cart-item-image{padding: 0px;width: 52px!important;}
+..cart-item-image .img-responsive{padding-right: 0px;
+    margin-right: 0;
+    width: 100px;}
+/*PROGRESS BAR*/
+
+.bs-wizard {margin-top: 40px;}
+
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 16px; height: 16px; display: block; background: #09B4AC; top: 45px; left: 50%; margin-top: -7px; margin-left: -8px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0; background-color: #e5e5e5; overflow: hidden;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #09B4AC;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #e5e5e5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+/*END Form Wizard*/
+.a-spacing-extra-large, .a-ws .a-ws-spacing-extra-large {
+    margin-bottom: 26px!important;
+     margin-top: 26px!important;
+}
+ .a-divider.a-divider-section  .a-divider-inner{
+      height: 44px;
+    margin-bottom: -18px;
+    background: -webkit-linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    z-index: 0;
+    zoom: 1;
+    width:80%;
+ }
+ .a-divider.a-divider-section .a-divider-inner:after {
+    display: block;
+    width: 100%;
+    height: 44px;
+    background-color: transparent;
+    background: -webkit-linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    z-index: 1;
+    content: "";
+}
+ .order-details{
+    border: 1px solid #ddd;
+    margin-top: -2px;
+    padding: 20px;
+    border-top: 0px;
+  }
+  .no-margin-row{
+    margin:5px;
+  }
+  .cursor-pointer{
+    cursor:pointer;
+  }
+  .font-12{
+    font-size: 12px;
+  }
+  .panel-footer{padding: 4px 15px;}
+  .order-details-summary li {
+    border-bottom:  1px dashed #eee;
+    clear:both;
+    display: block;
+
+  }
+  .well{
+    background: white;
+    padding-top: 5px;
+    margin: 10px;
+    width: 46%!important;
+    padding: 20px;
+    vertical-align: top;
+  }
+
+/*credit card images.*/
+.payment-icon {
+  background: url(https://si.cdn.dell.com/sites/imagecontent/app-merchandizing/responsive/PublishingImages/buy_payments_icons_sprite.png) no-repeat 50px 0;
+  display: block;
+  float: left;
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+}
+.payment-icon.all {
+  background-position: 0 0;
+  width: 200px;
+}
+.payment-icon.discover,
+.payment-icon.d {
+  background-position: -150px 0;
+}
+.payment-icon.master,
+.payment-icon.m {
+  background-position: -50px 0;
+}
+.payment-icon.visa,
+.payment-icon.v {
+  background-position: 0 0;
+}
+.payment-icon.amex,
+.payment-icon.a {
+  background-position: -100px 0;
+}
+.payment-icon.maestro,
+.payment-icon.ms {
+  background-position: -450px 0;
+}
+.payment-icon.dpa {
+  background-position: -200px 0;
+}
+.payment-icon.gift-card {
+  background-position: -250px 0;
+}
+.payment-icon.paypal {
+  background-position: -300px 0;
+}
+.icon-small-checkmark {
+  color: #6ea204;
+}
+.card-issuer-image {
+  width: 60px;
+}
+.padding-left-20px {
+  padding-left: 20px;
+}
+.add-credit-card {
+  max-width: 500px;
+}
+.divider-div    {border-bottom: 1px dashed #eee;
+    margin: 10px;
+    padding: 2px;
+    clear: both;
+  }
+
+  .green-color{color:#6ea204;
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+.dell-blue-background {
+    background-color: #0085C3;
+}
+.clear-both {
+    clear:both;
+}
+.panel-body{
+    vertical-align:top; 
+}
+.placeholders h4 {
+    margin-bottom: 11px;
+}
+.margin-top-10-bot-0{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.shippingPreference label{
+    clear:both;
+    display:block;
+    margin:5px 10px;
+    font-weight:normal!important;
+    margin-left:0px;
+    vertical-align:middle;
+}
+.row-flex {
+  display: flex; /* equal height of the children */
+  align-items:flex-start ;
+}
+
+
+.flexbox-container {
+     display: flex;
+    align-items: center;
+     display: flex; /* equal height of the children */
+  align-items:flex-start ;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+    overflow: hidden;
+    -webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.flexbox-container > div.well {
+	width: 45%;
+	padding: 10px;
+    flex-grow:1;
+ flex: content;
+    padding: 1em;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 20px;
+}
+
+.media-list profile_div .media-heading span{
+    line-height: 30px;
+    vertical-align: middle;
+
+}
+    .media-list profile_div .media-heading {
+            margin-top: 0;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    line-height: 30px;
+    }
+    .stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+#option2 {
+
+
+}
+#option2 .flexbox-container{    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */}
+#option2 .styled-media {
+   border: 1px solid #00447c;
+   
+    width: 30%;
+    float: left;
+    padding: 20px;
+    margin: 20px;
+        border: 1px dashed #00447c;
+    width: 45%;
+   display: table-cell; 
+   min-height:178px;
+    padding: 20px;
+    margin: 11px;
+    background: #e8f4a9
+
+}
+
+/*Form Wizard*/
+
+#option2 .bs-wizard {    margin-top: 24px;}
+#option2 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+#option2 .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+#option2 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+#option2 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 13px; margin-bottom: 5px;}
+#option2 .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+#option2 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 16px; height: 16px; display: block; background: #09B4AC; top: 45px; left: 50%; margin-top: -7px; margin-left: -8px; border-radius: 50%;} 
+#option2 .bs-wizard > .bs-wizard-step > .progress {    position: relative;
+    border-radius: 0px;
+    height: 3px;
+    box-shadow: none;
+    margin: 1px 0;
+    background-color: #e5e5e5;
+    overflow: hidden;}
+#option2 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #42aeaf;}
+#option2 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+#option2 .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+#option2 .bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+#option2 .bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+#option2 .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #e5e5e5;}
+#option2 .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+#option2 .bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+#option2 .bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+#option2 .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+
+/*END Form Wizard*/
+#option2 .alert {
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 2px;font-size: 12px;
+}
+
+#option2 .media-body a{
+        color: #71523e;
+    text-decoration: underline;
+}
+#option2   ul{ margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding: 0;
+    color:#71523e;
+}
+    #option2 .media-body ol li {
+        margin-top:10px;
+    }
+
+        #option2 .styled-media:hover{
+  background:#c1d82f;
+  cursor:pointer;
+    }
+#option2 .nav-sidebar{
+    
+    margin-right: -16px;
+}
+#right-navigation {
+    width:100%;
+    height:100%;
+   background:#007db8;color:white;
+}
+#right-navigation li{
+    padding:10px;
+    border-bottom:1px solid #00447c;color:white;
+}
+
+#right-navigation li.link-nav{
+   background:#ffffff;color:#00447c; border-bottom:1px solid #007db8;cursor:pointer;
+}
+#right-navigation li.link-nav:hover{
+    padding:10px;
+    border-bottom:1px solid #00447c;color:white;
+    background:#42aeaf;
+}
